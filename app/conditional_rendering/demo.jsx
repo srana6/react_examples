@@ -1,5 +1,5 @@
-require('bootstrap/dist/css/bootstrap.min.css');
 import React from 'react';
+import Button from '@material-ui/core/Button';
 import World from './world.jsx';
 
 class Demo extends React.Component {
@@ -20,9 +20,9 @@ class Demo extends React.Component {
     render() {
         return(
             <div>
-            <button className='btn btn-primary'
+            <Button variant="contained" color="primary"
                 onClick={this.handleClick}>
-                 hello </button>
+                 hello </Button>
                  {!this.state.stateHidden ? <World name='world'/> : null}
             </div>
         );
