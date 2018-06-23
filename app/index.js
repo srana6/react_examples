@@ -5,7 +5,8 @@ import ReactDOM from 'react-dom';
 // import Demo from './refs/custom_text_input'
 // import Demo from './refs/PassingRefsToChildComponent.jsx';
 // import Demo from './refs/RefOnDomElement.jsx';
-import Demo from './component_communication/parent_child_communication/Parent.jsx';
+// import Demo from './component_communication/parent_child_communication/Parent.jsx';
+import Demo from './component_communication/child_parent_communication/parent.jsx';
 
 ReactDOM.render(
   <Demo />,
