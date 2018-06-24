@@ -7,7 +7,9 @@ import ReactDOM from 'react-dom';
 // import Demo from './refs/RefOnDomElement.jsx';
 // import Demo from './component_communication/parent_child_communication/Parent.jsx';
 // import Demo from './component_communication/child_parent_communication/parent.jsx';
-import Demo from './component_communication/siblings_communication/base_parent.jsx';
+// import Demo from './component_communication/siblings_communication/base_parent.jsx';
+// import Demo from './controlled_component/name_form.jsx';
+import Demo from './controlled_component/reservation.jsx';
 
 ReactDOM.render(
   <Demo />,
