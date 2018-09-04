@@ -9,8 +9,8 @@ import ReactDOM from 'react-dom';
 // import Demo from './component_communication/child_parent_communication/parent.jsx';
 // import Demo from './component_communication/siblings_communication/base_parent.jsx';
 // import Demo from './controlled_component/name_form.jsx';
-import Demo from './controlled_component/reservation.jsx';
-
+// import Demo from './controlled_component/reservation.jsx';
+import Demo from './always_immutable/item.jsx';
 ReactDOM.render(
   <Demo />,
   document.getElementById('app')
