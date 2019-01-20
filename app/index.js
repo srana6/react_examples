@@ -10,7 +10,8 @@ import ReactDOM from 'react-dom';
 // import Demo from './component_communication/siblings_communication/base_parent.jsx';
 // import Demo from './controlled_component/name_form.jsx';
 // import Demo from './controlled_component/reservation.jsx';
-import Demo from './always_immutable/item.jsx';
+// import Demo from './always_immutable/item.jsx';
+import Demo from './aync_await/CurrencyConverter.jsx';
 ReactDOM.render(
   <Demo />,
   document.getElementById('app')

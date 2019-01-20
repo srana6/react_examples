@@ -1,12 +1,15 @@
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const PATHS = {
     app: path.resolve(__dirname,'app'),
     build: path.resolve(__dirname,'build')
 };
+const APP_DIR = PATHS.app + '/index.js';
 module.exports = {
-    entry: {
-        app: PATHS.app + '/index.js'
-    },
+    entry: ['@babel/polyfill', APP_DIR],
+    // entry: {
+    //     app: PATHS.app + '/index.js'
+    // },
     output: {
         path: PATHS.build,
         filename: 'bundle.js'
@@ -20,10 +23,7 @@ module.exports = {
       {
          test: /\.js?/,
          exclude: /(node_modules|bower_compontents)/,
-         loader: 'babel-loader',
-            options: {
-                presets:['env','react']
-            }
+         loader: 'babel-loader'
       },
       {
          test: /\.png$/,
@@ -50,5 +50,11 @@ module.exports = {
         use: 'url-loader?limit=10000&mimetype=image/svg+xml'
        }
      ]
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({ 
+          template: './build/index.html', 
+          filename: './index.html' 
+        })
+      ]
 };
